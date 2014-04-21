@@ -49,10 +49,10 @@ var societe = document.getElementById("societe").value;
 writediv(file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/index.php?edition='+edition+'&societe='+societe));
 document.getElementById('pic').style.visibility="hidden";}
 
-function rechargerPage(edition) {
+function rechargerPage(edition,societe) {
 document.getElementById('loader').innerHTML="<img src='http://distriweb.metrofrance.com/reporting/mobile/phonegap/loader.gif'>";
 var tournee = document.getElementById("tournee").value;
-writediv(file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/index.php?edition='+edition+'&t_choix='+tournee+'&action=commencer&envoi=email'));
+writediv(file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/index.php?edition='+edition+'&societe='+societe+'&t_choix='+tournee+'&action=commencer&envoi=email'));
 document.getElementById('pic').style.visibility="hidden";}
 
 function voir_tournee(edition) {
