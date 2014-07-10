@@ -145,7 +145,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/mobile_modif_donnees_reelle.php?edition='+edition+'&num='+num+'&site='+site+'&Types='+types+'&nouvelle_quantite_reelle='+quantite_reelle+'&nouvelle_quantite_retours='+quantite_retours+'&nouvelle_horaire_debut='+horaire_debut+'&nouvelle_horaire_debut='+horaire_debut+'&PDA_Latitude='+position.coords.latitude+'&PDA_Longitude='+position.coords.longitude+'&presenceGD='+presenceGD+'&quantite_retours_codiff='+quantite_retours_codiff+'&resultatun='+resultatun+'&resultatdeux='+resultatdeux+'&resultattrois='+resultattrois),{maximumAge:0, timeout:0}})
 }
 
-else{
+else{alert("GPS inactif");
 file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/mobile_modif_donnees_reelle.php?edition='+edition+'&num='+num+'&site='+site+'&Types='+types+'&nouvelle_quantite_reelle='+quantite_reelle+'&nouvelle_quantite_retours='+quantite_retours+'&nouvelle_horaire_debut='+horaire_debut+'&nouvelle_horaire_debut='+horaire_debut+'&PDA_Latitude=&PDA_Longitude=&presenceGD='+presenceGD+'&quantite_retours_codiff='+quantite_retours_codiff+'&resultatun='+resultatun+'&resultatdeux='+resultatdeux+'&resultattrois='+resultattrois);
 }
 document.getElementById('loader').innerHTML="<img src='http://distriweb.metrofrance.com/reporting/mobile/phonegap/loader.gif'>";
