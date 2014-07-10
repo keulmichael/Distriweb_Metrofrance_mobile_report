@@ -42,7 +42,11 @@ function onError(error){
 writediv(file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/select_edition.php'))
 }
 
-
+function edition_sans_gps()
+{
+var edition = document.getElementById("edition").value;
+writediv(file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/index.php?edition='+edition))
+}
 
 function changecouleur(num,couleur) {
 var lien="lien"+num;
