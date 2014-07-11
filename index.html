@@ -20,27 +20,10 @@ xhr_object = new XMLHttpRequest();
 
 function edition()
 {
-navigator.geolocation.getCurrentPosition(onSuccess, onError)
-}
-
-function onSuccess(position) {
-lati=Math.round(position.coords.latitude);longi=Math.round(position.coords.longitude);
-if (lati==49 && longi==2 || lati==49 && longi==1 || lati==48 && longi==1 || lati==48 && longi==2  || lati==47 && longi==1 || lati==49 && longi==4){var edition='paris';}
-if (lati==46 && longi==5 || lati==45 && longi==6){var edition='lyon';}
-if (lati==43 && longi==5 || lati==44 && longi==5 || lati==43 && longi==6){var edition='marseille';}
-if (lati==51 && longi==3){var edition='lille';}
-if (lati==44 && longi==1){var edition='toulouse';}
-if (lati==47 && longi==-2){var edition='nantes';}
-if (lati==48 && longi==-2){var edition='rennes';}
-if (lati==49 && longi==8 || lati==49 && longi==6){var edition='strasbourg';}
-if (lati==44 && longi==4){var edition='montpellier';}
-if (lati==45 && longi==-1){var edition='bordeaux';}
-if (lati==44 && longi==7){var edition='nice';}
-writediv(file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/index.php?edition='+edition))
-}
-function onError(error){
 writediv(file('http://distriweb.metrofrance.com/reporting/mobile/phonegap/select_edition.php'))
 }
+
+
 
 function edition_sans_gps()
 {
