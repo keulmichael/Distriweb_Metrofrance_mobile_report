@@ -19,6 +19,11 @@ Michael Host
 <gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
 <gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
 
+<gap:platforms>
+<gap:platform name="android" minVersion="3.6.3" />
+</gap:platforms>
+
+
 <icon src="moi.png" />
 
 
@@ -32,7 +37,7 @@ Michael Host
 <feature name="http://api.phonegap.com/1.0/notification"/>
 
 
-    <preference name="phonegap-version" value="2.9.0" />
+    <preference name="phonegap-version" value="3.6.3" />
 
 
     <!-- for Android -->
