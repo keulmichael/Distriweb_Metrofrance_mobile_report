@@ -25,7 +25,7 @@ function Settings() {
     this.quality = 50;                                          // cameraOptions: quality
     this.targetWidth = 300;                                     // cameraOptions: targetWidth
     this.targetHeight = 300;                                    // cameraOptions: targetHeight
-    this.allowEdit = true;                                      // cameraOptions: allowEdit
+    this.allowEdit = false;                                      // cameraOptions: allowEdit
     this.correctOrientation = true;                             // cameraOptions: correctOrientation
     
     // Saving options:
